@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var me = document.currentScript;
+var div = document.createElement("div");
+var button = document.createElement("button");
+button.addEventListener("click", function () {
+	alert("Hahaha i am still here");
+});
+div.appendChild(button);
+me.parentNode.replaceChild(div, me);
+</script>
+
+</body>
+</html>
